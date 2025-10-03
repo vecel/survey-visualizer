@@ -9,14 +9,10 @@ export default async function Page() {
     ...item,
   }));
 
-
-  console.log(questions)
-
   return (
-    <>
-        <div>Go back</div>
-        <h1>Hello, Dashboard</h1>
+    <div className="size-full flex flex-col">
+        <div className="h-16 border-b"></div>
         <DashboardSkeleton questionsList={questions}/>
-    </>
+    </div>
   )
 }
