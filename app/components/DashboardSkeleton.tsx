@@ -28,19 +28,20 @@ export default function DashboardSkeleton({
 
     return (
         <div className="flex-1 p-8 grid grid-cols-2 gap-8 grid-rows-2">
+            <div className="border">
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart data={data}>
+                        <CartesianGrid />
+                        <XAxis dataKey="category" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="count" fill="#8884d8" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
             <div className="border"/>
             <div className="border"/>
-            <div className="border"/>
-            {/* <ResponsiveContainer>
-                <BarChart data={data} margin={{top: 20, right: 5, bottom: 5, left: 5}}>
-                    <CartesianGrid />
-                    <XAxis dataKey="category" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="count" fill="#8884d8" />
-                </BarChart>
-            </ResponsiveContainer> */}
         </div>
     )
 }

@@ -1,3 +1,3 @@
 export default function Page() {
-  return <h1 className="size-full text-center">Select an item from the menu</h1>
+  return <h1 className="size-full flex justify-center items-center text-6xl">Nothing to see here ;(</h1>
 }
