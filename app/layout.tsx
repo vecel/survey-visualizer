@@ -2,6 +2,11 @@ import NavLink from "./components/NavLink"
 import "./globals.css"
 
 import { MdDashboard, MdHome } from "react-icons/md"
+import { Gabarito } from "next/font/google"
+
+const robotoFlex = Gabarito({
+  subsets: ['latin']
+})
 
 export default function RootLayout({
   children,
@@ -9,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={robotoFlex.className}>
       <body>
         <div className="flex size-full bg-surface text-on-surface">
           <nav className="w-64 flex flex-col border-r bg-surface-container text-on-surface-container border-surface-container-high">

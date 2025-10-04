@@ -45,31 +45,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --color-primary: #B39DDB;
-  --color-on-primary: #1C1B1F;
+    --color-primary: #B39DDB;
+    --color-on-primary: #1C1B1F;
 
-  --color-secondary: #81D4FA;
-  --color-on-secondary: #1C1B1F;
+    --color-secondary: #81D4FA;
+    --color-on-secondary: #1C1B1F;
 
-  --color-tertiary: #FFB74D;
-  --color-on-tertiary: #1C1B1F;
-  
-  --color-surface: #1E1E1E;
-  --color-surface-container-low: #020202;
-  --color-surface-container: #121212;
-  --color-surface-container-high: #292929;
-  --color-surface-variant: #333333;
+    --color-tertiary: #FFB74D;
+    --color-on-tertiary: #1C1B1F;
+    
+    --color-surface: #1E1E1E;
+    --color-surface-container-low: #020202;
+    --color-surface-container: #121212;
+    --color-surface-container-high: #292929;
+    --color-surface-variant: #434343;
 
-  --color-on-surface: #C6C6C6;
-  --color-on-surface-container: #F0F0F0;
-}
+    --color-on-surface: #C6C6C6;
+    --color-on-surface-container: #F0F0F0;
+  }
 }
 
 html {
   height: 100%;
+  font-family: sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
 }
