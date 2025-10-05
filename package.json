@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "deploy": "gh-pages -d out --nojekyll --cname"
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "15.5.4",
