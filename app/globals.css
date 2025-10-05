@@ -2,6 +2,8 @@
 
 :root {
   --color-primary: #5E35B1;
+  --color-primary-container: #3E15A1;
+
   --color-on-primary: #FFFFFF;
 
   --color-secondary: #03A9F4;
@@ -22,6 +24,8 @@
 
 @theme inline {
   --color-primary: var(--color-primary);
+  --color-primary-container: var(--color-primary-container);
+
   --color-on-primary: var(--color-on-primary);
 
   --color-secondary: var(--color-secondary);
@@ -46,6 +50,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-primary: #B39DDB;
+    --color-primary-container: #A37DBB;
     --color-on-primary: #1C1B1F;
 
     --color-secondary: #81D4FA;

@@ -6,8 +6,11 @@ interface Question {
     question: string
 }
 
-interface CategoryData {
+interface ChartData {
     name: string,
     count: number,
+}
+
+interface CategoryData extends ChartData {
     display: boolean
 }
