@@ -5,7 +5,6 @@ const repo = "/survey-visualizer"
 const nextConfig = {
   basePath: repo,
   assetPrefix: repo,
-  output: "export",
   images: {
     unoptimized: true
   },
