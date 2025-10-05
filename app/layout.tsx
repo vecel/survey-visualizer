@@ -21,7 +21,7 @@ export default function RootLayout({
             <div className="h-16 border-b border-surface-container-high" />
             <ul className="">
               <NavLink link="/" title="Home" Icon={MdHome} />
-              <NavLink link="dashboard" title="Dashboard" Icon={MdDashboard} />
+              <NavLink link="/dashboard" title="Dashboard" Icon={MdDashboard} />
             </ul>
           </nav>
           <main className="flex-1">

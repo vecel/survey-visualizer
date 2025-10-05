@@ -18,7 +18,7 @@ export default function DashboardSkeleton({
             <div className="border flex flex-col">
                 <h1 className="text-xl m-2 text-center">Categories distribution</h1>
                 <div className="flex-1">
-                    <ResponsiveContainer width="100%">
+                    <ResponsiveContainer width="100%" height={300}>
                         <BarChart data={ categories.filter(displayFilter) } margin={{top: 5, left: 10, bottom: 5, right: 10}}>
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="name" type="category" tick={<TruncatedTick />} interval={0} label={{value: "Category", position: "insideBottom"}} height={120}/>
@@ -35,7 +35,7 @@ export default function DashboardSkeleton({
             <div className="border flex flex-col">
                 <h1 className="text-xl m-2 text-center">Difficulties distribution</h1>
                 <div className="flex-1">
-                    <ResponsiveContainer width="100%">
+                    <ResponsiveContainer width="100%" height={300}>
                         <BarChart data={ difficulties } margin={{top: 5, left: 10, bottom: 5, right: 10}}>
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="name" type="category" interval={0} label={{value: "Difficulty", position: "insideBottom"}} height={60}/>
