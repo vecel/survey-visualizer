@@ -38,7 +38,7 @@ export default function DashboardSkeleton({
                     <ResponsiveContainer width="100%">
                         <BarChart data={ difficulties } margin={{top: 5, left: 10, bottom: 5, right: 10}}>
                             <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="name" type="category" interval={0} label={{value: "Category", position: "insideBottom"}} height={60}/>
+                            <XAxis dataKey="name" type="category" interval={0} label={{value: "Difficulty", position: "insideBottom"}} height={60}/>
                             <YAxis label={{value: "Number of entries", angle: -90}} domain={[0, 'dataMax + 5']}/>
                             <Tooltip contentStyle={{
                                 backgroundColor: "var(--color-surface-container)"

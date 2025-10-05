@@ -1,25 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #5E35B1;
-  --color-primary-container: #3E15A1;
+  --color-primary: #B39DDB;
+    --color-primary-container: #A37DBB;
+    --color-on-primary: #1C1B1F;
 
-  --color-on-primary: #FFFFFF;
+    --color-secondary: #81D4FA;
+    --color-on-secondary: #1C1B1F;
 
-  --color-secondary: #03A9F4;
-  --color-on-secondary: #FFFFFF;
+    --color-tertiary: #FFB74D;
+    --color-on-tertiary: #1C1B1F;
+    
+    --color-surface: #1E1E1E;
+    --color-surface-container-low: #020202;
+    --color-surface-container: #121212;
+    --color-surface-container-high: #292929;
+    --color-surface-variant: #434343;
 
-  --color-tertiary: #FF9800;
-  --color-on-tertiary: #FFFFFF;
-
-  --color-surface: #FFFFFF;
-  --color-surface-container-low: #FAFAFA;
-  --color-surface-container: #F5F5F5;
-  --color-surface-container-high: #EEEEEE;
-  --color-surface-variant: #E0E0E0;
-
-  --color-on-surface: #1C1B1F;
-  --color-on-surface-container: #2C2C2C;
+    --color-on-surface: #C6C6C6;
+    --color-on-surface-container: #F0F0F0;
 }
 
 @theme inline {
@@ -45,29 +44,6 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #B39DDB;
-    --color-primary-container: #A37DBB;
-    --color-on-primary: #1C1B1F;
-
-    --color-secondary: #81D4FA;
-    --color-on-secondary: #1C1B1F;
-
-    --color-tertiary: #FFB74D;
-    --color-on-tertiary: #1C1B1F;
-    
-    --color-surface: #1E1E1E;
-    --color-surface-container-low: #020202;
-    --color-surface-container: #121212;
-    --color-surface-container-high: #292929;
-    --color-surface-variant: #434343;
-
-    --color-on-surface: #C6C6C6;
-    --color-on-surface-container: #F0F0F0;
-  }
 }
 
 html {
