@@ -1,4 +1,4 @@
-name: Deploy Next.js App to GitHub Pages
+name: Deploy Next.js to GitHub Pages
 
 on:
   push:
@@ -17,10 +17,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build
-      - name: Copy build output
-        run: cp -r .next/static .next/standalone .next/trace .next/trace*
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .next/static
+          publish_dir: ./out
